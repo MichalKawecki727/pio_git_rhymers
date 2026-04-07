@@ -3,9 +3,10 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
     public static final int ERROR = -1;
+    public static final int DEFAULT = -1;
     public static final int FULL = 11;
-    public static final int TAB_SIZE = 12;
-    private int[] numbers = new int[TAB_SIZE];
+    public static final int TAB_SIZE = FULL + 1;
+    private final int[] numbers = new int[TAB_SIZE];
 
     public int total = -1;
 
@@ -15,7 +16,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean callCheck() {
-        return total == ERROR;
+        return total == DEFAULT;
     }
 
     public boolean isFull() {
