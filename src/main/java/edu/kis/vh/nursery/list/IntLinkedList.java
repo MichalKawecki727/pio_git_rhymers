@@ -36,7 +36,6 @@ public class IntLinkedList {
         }
     }
 
-
     public void push(int i) {
         if (last == null)
             last = new Node(i);
@@ -50,7 +49,8 @@ public class IntLinkedList {
     public boolean isEmpty() {
         return last == null;
     }
-    
+
+    //TODO: dodać funkcjonalność isFULL -> ona zawsze zwraca false i nie sprawdza czy lista jest pełna.
     public boolean isFull() {
         return false;
     }
