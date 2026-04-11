@@ -3,8 +3,7 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
     private static final int ERROR = -1;
-    Node last;
-    int i;
+    private Node last;
 
     public void push(int i) {
         if (last == null)
